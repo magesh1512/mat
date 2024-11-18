@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media(max-width:1920px){
+   .navbar{
+    background-color: rgb(44, 38, 38);
+} 
+
+img{
+padding: 10px;
+border-radius: 50%;
+}
+#menu-item{
+    display: none;
+}
+.icon{
+    display: none;
+}
+.icon{
+   display: none;
+   float: right;
+    padding: 15px 20px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.menu li{
+ display: inline-block;
+position: relative;
+ padding-top: 10px;
+}
+.menu li button{
+    padding: 10px;
+    background-color: red;
+    color: white;
+    margin: 10px;
+}
+.menu{
+    list-style: none;
+float: right;
+margin-right: 10px;
+}
+.menu li h2{
+    display: block;
+    color: aquamarine;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.menu li h2:hover{
+    background-color: black;
+    cursor: pointer;
+}
+.content{
+    display: none;
+    background-color: rgb(8, 121, 8);
+    min-width: 100px;
+    position: absolute;
+}
+.content a{
+    display: block;
+text-decoration: none;
+color: white;
+padding: 10px;
+}
+.content a:hover{
+    background-color: lightsalmon;
+
+}
+.dropdown:hover .content{
+    display: block;
+}
+
+}
+@media(max-width:768px){
+    .menu{
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+    .menu li{
+        display: block;
+        background-color: rgb(43, 38, 38);
+position: relative;
+    }
+    .icon{
+        display: block;
+    }
+    #menu-item:checked ~ .menu{
+        display: block;
+    }
+    .content{
+        display: none;
+        background-color: rgb(8, 121, 8);
+        min-width: 100px;
+        position: absolute;
+        z-index: 1;
+    }
+    .content a{
+        display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    }
+    .content a:hover{
+        background-color: lightsalmon;
+    
+    }
+    .dropdown:hover .content{
+        display: block;
+    }
+  
+}
